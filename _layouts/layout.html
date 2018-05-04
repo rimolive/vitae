@@ -25,7 +25,19 @@
 <body>
 <div class="container">
     <header class="four columns">
-        <img src="{{ site.baseurl }}static/img/profile.png" class="me">
+        <center>
+            <img src="{{ site.baseurl }}static/img/profile.jpeg" class="me">
+            <p>
+                <h5>
+                    <a href="https://github.com/{{ site.github }}"><i class="fa fa-github"></i></a>
+                    <a href="https://twitter.com/{{ site.twitter }}"><i class="fa fa-twitter"></i></a>
+                    <a href="https://medium.com/@{{ site.username }}"><i class="fa fa-medium"></i></a>
+                    <a href="https://linkedin.com/in/{{ site.linkedin }}"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://scholar.google.co.uk/citations?user={{ site.google_scholar }}"><i class="fa fa-graduation-cap"></i></a>
+                    <a href="https://orcid.org/{{ site.orcid }}"><i class="fa fa-info-circle"></i></a>
+                </h5>
+            </p>
+        </center>
         <h1>{{ site.name }}</h1>
         <p>
             <a href="{{ site.tel_full }}">{{ site.tel }}</a>
@@ -41,17 +53,12 @@
         <p>
             <a href="{{ site.website_full }}">{{ site.website }}</a><br/>
         </p>
-        <p>
-            <a href="{{ site.email_full }}">{{ site.email }}</a><br/>
-            <a href="https://github.com/{{ site.github }}"><i class="fa fa-github"></i> Github</a> /
-            <a href="https://twitter.com/{{ site.twitter }}"><i class="fa fa-twitter"></i> Twitter</a>
-        </p>
     </header>
-    <div class="thirteen columns clearfix">
+    <div class="twelve columns clearfix">
 
         {{ content }}
 
-    <footer class="twelve columns">
+    <footer class="thirteen columns">
         <p>© All rights reserved. Powered by <a href="http://jekyllrb.com/">Jekyll</a> and
             <a href="https://www.github.com/jekyller/vitae">vitae</a> with ♥</p>
     </footer>
